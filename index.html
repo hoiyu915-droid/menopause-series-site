@@ -545,7 +545,7 @@
 
       const accents = ["#4d7f52", "#0f766e", "#c86152", "#3f6f91", "#7f4d5d", "#b9822f"];
       const driveView = (id) => `https://drive.google.com/file/d/${id}/view`;
-      const driveThumb = (id) => `https://drive.google.com/thumbnail?id=${id}&sz=w1600`;
+      const cardSrc = (label) => `cards/${label}.PNG`;
 
       const nav = document.querySelector("#chapter-nav");
       const root = document.querySelector("#chapters-root");
@@ -578,7 +578,7 @@
               ${chapter.cards.map(([label, id]) => `
                 <figure class="figure-card">
                   <a href="${driveView(id)}" target="_blank" rel="noreferrer">
-                    <img loading="lazy" src="${driveThumb(id)}" alt="第 ${chapter.no} 章圖卡 ${label}" />
+                    <img loading="lazy" src="${cardSrc(label)}" alt="第 ${chapter.no} 章圖卡 ${label}" />
                     <figcaption class="caption"><span>${label}.PNG</span><span>開啟原圖</span></figcaption>
                   </a>
                 </figure>
