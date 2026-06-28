@@ -5,7 +5,8 @@
 ## 檔案
 
 - `index.html`：首頁、章節地圖、17 章內容、各章圖卡 gallery
-- 圖卡目前引用 Google Drive 縮圖，點擊可回到 Drive 原始圖卡
+- 圖卡放在 `cards/` 資料夾，檔名格式為 `01.01.PNG`
+- 點擊圖卡可回到 Google Drive 原始圖卡
 - 每章文字稿連回 Google Drive 原文
 
 ## GitHub Pages
