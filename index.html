@@ -156,7 +156,8 @@
       ];
       const accents = ["#4d7f52", "#0f766e", "#c86152", "#3f6f91", "#7f4d5d", "#b9822f"];
       const mdPath = (file) => `md/${file}`;
-      const cardSrc = (label) => `cards/${label}.PNG`;
+      const siteBase = "https://hoiyu915-droid.github.io/menopause-series-site/";
+      const cardSrc = (label) => `${siteBase}cards/${label}.PNG`;
       const escapeHtml = (value) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
       const inlineMarkdown = (value) => escapeHtml(value)
         .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
